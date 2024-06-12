@@ -1,0 +1,49 @@
+<div class="container login-container">
+  <div class="row">
+    <div class="col-md-2"></div>
+    <div class="col-md-8">
+      <div class="card">
+        <div class="card-body">
+          <form id="login-form">
+            <div class="input-group mb-3">
+              <input
+                id="username"
+                type="text"
+                class="form-control"
+                placeholder="Username"
+                aria-label="Username"
+                aria-describedby="basic-addon1"
+              />
+            </div>
+            <div class="input-group mb-3">
+              <input
+                id="password"
+                type="password"
+                class="form-control"
+                placeholder="Password (Type anything...)"
+                aria-label="Password"
+                aria-describedby="basic-addon1"
+              />
+              <span
+                class="input-group-text icon-eye-password"
+                id="basic-addon1"
+                onclick="changePasswordType()"
+                >
+                <i class="bi-eye" id="bi-eye"></i>
+                <i class="bi-eye-slash" id="bi-eye-slash" style="display: none;"></i>
+              </span>
+            </div>
+            <button
+              type="button"
+              class="btn btn-primary"
+              onclick="validateForm()"
+            >
+              Login
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-2"></div>
+  </div>
+</div>
